@@ -22,6 +22,8 @@
   <div>
     <%= paginate tasks %>
   </div>
+<% else %>
+  <h2>There is no task now</h2>
 <% end %>
 
 <%= link_to '新規Taskの投稿', new_task_path, class: "btn btn-primary" %>
