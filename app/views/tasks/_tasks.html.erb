@@ -1,6 +1,5 @@
-<h1>Task一覧</h1>
-
 <% if tasks.any? %>
+  <h1>Task一覧</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -23,7 +22,7 @@
     <%= paginate tasks %>
   </div>
 <% else %>
-  <h2>There is no task now</h2>
+  <h1>There is no task now</h1>
 <% end %>
 
 <%= link_to '新規Taskの投稿', new_task_path, class: "btn btn-primary" %>
